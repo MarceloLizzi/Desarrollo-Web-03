@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <script src="https://kit.fontawesome.com/87ea48c97f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+    <title>Nutrition Palace</title>
+</head>
+<body>
+    
+        <!-- Barra de navegacion-->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <p class="navbar-brand"><span id="titulo">N</span>utrition <span id="titulo">P</span>alace</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-products-tab" data-toggle="pill" data-target="#pills-products" type="button" role="tab" aria-controls="pills-products" aria-selected="false">Alimentacion</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Entrenamiento</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Ayuda</button>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main role="main">
+            
+            <!-- My Carrousel-->
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWN0aXZpZGFkJTIwZmlzaWNhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=100%" class="d-block w-100" alt="...">
+                        
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+                                <h1 class="carrousel-tittle">Los beneficios de la actividad fisica.</h1>
+                                <p>La actividad fisica es esencial para mantenernos saludables.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvY2luYW5kb3xlbnwwfDB8MHx8&auto=format&fit=crop&w=100%" class="d-block w-100" alt="...">
+                        
+                        
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1 class="carrousel-tittle">Los alimentos y el bienestar.</h1>
+                                <p>La buena salud esta basada en nuestra alimentacion diaria.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFsaW1lbnRvcyUyMHNhbHVkYWJsZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=100%" class="d-block w-100" alt="...">
+                        
+                        
+                        <div class="container">
+                            <div class="carousel-caption text-center">
+                                <h1 class="carrousel-tittle">Las importancia de frutas y verduras.</h1>
+                                <p>Es esencial consumir frutas y verduras para mantener una dieta equilibrada.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+            
+                <!-- Pestañas de navegacion -->
+
+                  <div class="tab-content" id="pills-tabContent">
+
+                    <!-- pestaña inicio -->
+
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <div class="blog-post">
+
+                        <h2 class="blog-post-title"> La nutricion y esperanza de vida.</h2>
+                        
+                        <p>El binomio nutrición y salud es importante para todas las personas. Es fundamental para tener una buena calidad de vida sentirse sanos y gozar del bienestar que proporciona una buena alimentación y, en eso, la nutrición juega un papel elemental. 
+
+                          Todo el mundo, aunque no sea profesional, puede intuir que una dieta sana es aquella que contiene elementos que no son perjudiciales, tales como, por ejemplo, frutas y verduras, y elimina de ella aquellos productos como fritos y dulces industriales. Es importante señalar que para llevar la relación entre nutrición y salud es muy estrecha. </p>
+                        <blockquote>
+                          <p>Hay un único motivo, porque la correcta nutrición favorece muchísimo nuestro bienestar. A nivel físico, pero también mental.Ahora bien, ¿cuáles son esos beneficios que la nutrición conlleva para que las personas lleven una vida saludable? A continuación, encontrarás algunas pautas genéricas acerca de nutrición y salud, pero en ningún caso son recomendaciones. Este es un artículo divulgativo, que no pretende aconsejar acerca de la alimentación que cada persona debe seguir, sino informar acerca de conceptos que ilustran la relación entre salud y nutrición.</p>
+                        </blockquote>
+                        <p>Antes de realizar cualquier modificación en nuestra dieta, lo mejor es contar con la ayuda de un profesional de la nutrición, que pueda asesorarnos en base a nuestras características particulares.</p>
+                        
+                        <h2>Nutricion, salud y el peso adecuado.</h2>
+                        <p>En la gran mayoría de ocasiones se asocia la pérdida de peso a una dieta estricta. En realidad, para que siempre se mantenga un peso adecuado, lo mejor es llevar una dieta saludable y equilibrada. De esta forma, se tienen los nutrientes que el cuerpo necesita para que pueda trabajar correctamente.  Para ello es fundamental cambiar la mentalidad de comer productos que no aportan nada por la de consumir alimentos que aporten lo que el cuerpo necesita.</p>
+                        
+                        <h3>Protege el cuerpo de enfermedades.</h3>
+                        <p>Esta es otra de las bondades de la relación entre nutrición y salud. Hay muchas enfermedades crónicas, como, por ejemplo, la diabetes de tipo 2 o las cardiopatías, que tienen como causa una mala nutrición. Con una buena dieta, se estará previniendo enfermedades al consumir alimentos que son beneficiosos para el organismo.</p>
+                        
+                        <h3>Favorece el bienestar de la mente.</h3>
+                        <p>Como ya se ha mencionado antes, la relación entre nutrición y salud no solo afecta al bienestar físico, sino también al de la mente. Tener una buena dieta, con todos los nutrientes que el cuerpo requiere favorece el bienestar mental.
+
+                          Así, es perfecto contar con una hoja de ruta, un plan de alimentos que permita comer de forma equilibrada alimentos con nutrientes, pero también adoptar hábitos que sean saludables.</p>
+                        
+                          <h3>Una dieta equilibrada es fundamental.</h3>
+                        <p>No hay que olvidar que cada uno de los grupos de alimentos aporta al organismo distintos nutrientes y beneficios, por lo que es esencial llevar una dieta equilibrada que incluya alimentos de todos los grupos.</p>
+                          <ul id="dieta">
+                          <li><b> Proteinas integrales:</b> El cuerpo necesita carbohidratos, pero, es mejor utilizar los que no están refinados. Aportan la energía que necesita el cuerpo, fibra, minerales, antioxidantes y, además son altamente digestivos. </li>
+                          <li><b>Frutas y verduras:</b> sobras es conocida la importancia de las frutas y las verduras en la nutrición y salud. Son una gran fuente de vitaminas y minerales que ayudan a regular todas las funciones que lleva a cabo el organismo, pero, además, le protegen contra las enfermedades crónicas. Es buena idea consumirlas enteras, en lugar de hacer zumo</li>
+                          <li><b>Los lácteos:</b> Los productos lácteos son ricos en nutrientes que son importantes para el cuerpo, como es el caso del calcio, el potasio, el fósforo y las vitaminas A, D y B12. Ejemplos que son fácilmente adquiribles en cualquier establecimiento son la leche o los yogures.</li>
+                        </ul>
+                      </div>
+                </div>
+              
+                    <!-- pestaña Alimentacion -->
+
+                    <div class="tab-pane fade" id="pills-products" role="tabpanel" aria-labelledby="pills-products-tab">
+
+                      <section class="jumbotron text-center">
+                        <div class="container">
+                          <h1 id="encabezado-alimentos">Buenas prácticas para mantener una buena nutrición y salud.</h1>
+                          <p class="lead text-muted">La composición exacta de una alimentación variada, equilibrada y saludable estará determinada por las características de cada persona (edad, sexo, hábitos de vida y grado de actividad física), el contexto cultural, los alimentos disponibles en el lugar y los hábitos alimentarios. No obstante, los principios básicos de la alimentación saludable siguen siendo los mismos.</p>
+                        </div>
+                      </section>
+                    
+                      <div class="album py-5 bg-light">
+                        <div class="container">
+                    
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1587540217853-52034b3e6c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2ZW5hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Galletas de Avena y Pasas</h1>
+                                  <p class="card-text">Ricas en proteinas, bajas calorias, gran cantidad de carbohidratos e ideal para una merienda.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1601579112521-5d6badb0bf3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aHVldm9zJTIwcmV2dWVsdG9zfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Revuelto de verduras</h1>
+                                  <p class="card-text">Muy saludabe y delicioso, propiedades antioxidantes, bajo en grasas y alto en fibra y proteinas.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc2F5dW5vfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+
+                                <div class="card-body">
+                                  <h1>Desayuno simple y nutritivo</h1>
+                                  <p class="card-text">Tostadas de pan integral con huevos, tomates y lechuga. Liviano y genial para comenzar tu dia.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGlldGElMjBzYWx1ZGFibGV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Mix de vegetales</h1>
+                                  <p class="card-text">Variedad de vegetales,y de nutrientes como vitaminas y minerales que ayudan a mantener el peso. </p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taWRhJTIwcHJvdGVpY2F8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Pollo a la Plancha</h1>
+                                  <p class="card-text">Pechugas de pollo deliciosas acompañadas con legumbres y papas. Alto en proteinas y fibra.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                               <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                               <img src="https://images.unsplash.com/photo-1620167790054-de54f34308bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbWlkYSUyMHByb3RlaWNhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Milanesa y tarta de verduras</h1>
+                                  <p class="card-text">Milanesas de soja y tarta de espinacas,alto en fibra, proteinas y bajo en colesterol.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFucXVlcXVlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Waffles esponjosos</h1>
+                                  <p class="card-text">Ideal para la merienda. Waffles con miel, arandanos y platano, mix ideal de nutrientes y azucares.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFnZGFsZW5hc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Cupcakes proteicos</h1>
+                                  <p class="card-text">Cupcakes de harina integral con chips de chocolate,tambien se le agrego un scoop(30g) de proteina. </p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card mb-4 shadow-sm">
+                                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                                <img src="https://images.unsplash.com/photo-1619898804188-e7bad4bd2127?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmF0aWRvc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                                <div class="card-body">
+                                  <h1>Batido energetico</h1>
+                                  <p class="card-text">Batido con mezcla de platanos, avena, leche de almendras, mantequilla de mani y miel.</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+          
+                    <!-- pestaña entrenamientos -->
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <section class="jumbotron text-center">
+                        <div class="container">
+                          <h1 id="encabezado-alimentos">El entrenamiento fisico salva vidas.</h1>
+                          <p class="lead text-muted">Realizar actividad física regularmente hace que te sientas mejor contigo mismo y, además, que consigas beneficios para tu salud. Por el contrario, está demostrado que el sedentarismo es un factor de riesgo para el desarrollo de enfermedades crónicas.</p>
+                        </div>
+                      </section>
+                      <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">Actividades Aerobicas. <span class="text-muted">Los beneficios de correr.</span></h2>
+                            <p class="lead">Dentro de los principales beneficios de correr también está la reducción en los riesgos de sufrir <b>hipertensión arterial, diabetes tipo 2, obesidad, enfermedades cardiovasculares y derrames cerebrales.</b>
+                              Ayuda a mantener la línea. Este constituye otro de los beneficios de correr más importantes: se queman más <b>calorías</b> que con otros deportes, aumenta el tejido muscular y disminuye la cantidad de tejido graso.
+                              Se generan endorfinas. Además, mejora el humor, la autoestima, disminuye el estrés y mejora la salud <b>emocional.</b></p>
+                        </div>
+                        <div class="col-md-5">
+                            <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+                            <img src="https://images.unsplash.com/photo-1551927336-09d50efd69cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJ1bm5pbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    
+                    <hr class="featurette-divider">
+                    
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">Entrenamiento en gimnasios. <span class="text-muted">Musculacion.</span></h2>
+                            <p class="lead">El entrenamiento de fuerza o con pesas puede ayudarle a ponerse más fuerte, y como consecuencia a verse y a sentirse mejor con tan solo unas pocas sesiones cada semana. Beneficios de salud significativos:
+                              <ul id="gimnasios">
+                                <li><b>Masa muscular:</b> La masa muscular naturalmente disminuye con la edad; sin embargo, el entrenamiento de fuerza puede ayudar a revertir esa tendencia.</li>
+                              <li><b>Huesos más fuertes:</b> El entrenamiento de fuerza aumenta la densidad ósea y reduce el riesgo de fracturas.</li>
+                              <li><b>Flexibilidad de las articulaciones:</b> El entrenamiento de fuerza ayuda a mantener la flexibilidad articular y puede reducir los síntomas de la artritis.</li>
+                              <li><b>Control del peso:</b> A medida que gana músculos, su cuerpo empieza a quemar calorías con mayor facilidad, facilitando el control de su peso.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+                            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGd5bXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    
+                    <hr class="featurette-divider">
+                    
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">Salud fisico-mental. <span class="text-muted">Yoga.</span></h2>
+                            <p class="lead">El yoga es una práctica que conecta el cuerpo, la respiración y la mente. Hoy en día la mayoría de las personas en occidente hace yoga como ejercicio y para reducir el estrés. El yoga puede mejorar el nivel general de su estado físico, su postura y su flexibilidad. También puede:
+                              <ul id="gimnasios">
+                                <li><b>Controlar</b> la presión arterial y su frecuencia cardíaca.</li> 
+                                <li>Ayudarle a <b>crelajarse.</b></li>
+                                <li>Mejorar su <b>confianza</b> en usted mismo.</li>
+                                <li>Reducir el <b>estres</b>.</li>
+                                <li>Mejorar su <b>coordinación</b>.</li>
+                                <li>Mejorar su <b>concentración</b>.</li>
+                                <li>Ayudarle a <b>dormir</b> mejor.</li>
+                                <li>Ayudar a la <b>digestión</b>.</li>
+                              </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+                            <img src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHlvZ2F8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>
+                    </div>
+                  
+
+                    
+                    <!--pestaña ayuda -->
+                    
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                      <section class="jumbotron text-center">
+                        <div class="container">
+                          <h1 id="encabezado-alimentos">Es muy importante contar con el apoyo de especialistas.</h1>
+                          <p class="lead text-muted">Realizar chequeos medicos regularmente es fundamental para prevenir enfermedades. Tambien es bueno acudir a un nutricionista antes de comenzar alguna actividad fisica.</p>
+                        </div>
+                      </section>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm9zdHJvfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=200&q=60" alt="" class="bd-placeholder-img rounded-circle">
+                  
+                          <h2>Cardiologo</h2>
+                          <p>JUAN MARTIN GARCIA. Medico cardiologo en el Hospital Centenario</p>
+                          
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                          
+                          <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=200&q=60" alt="" class="bd-placeholder-img rounded-circle">
+                          <h2>Personal Trainer</h2>
+                          <p>FERNANDO BRITOS. Personal Trainer en el gimanasio MegaGym, especialista en musculacion.</p>
+                       
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                          
+                          <img src="https://images.unsplash.com/photo-1515463892140-58a22e37ff72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNhcmElMjBkZSUyMG11amVyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=200&q=60" alt="" class="bd-placeholder-img rounded-circle">
+                          <h2>Nutricionista</h2>
+                          <p>MARIA MARTINA LOPEZ. Licenciada en Nutricion dedicada a la atencion de deportitstas y atletas olimpicos.</p>
+                          
+                        </div><!-- /.col-lg-4 -->
+                      </div>
+                      <div class="card-map">
+                        <iframe class="card-header" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.754392777714!2d-58.535038585106236!3d-33.01025018244016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b007f5375dd4b5%3A0x68a7344b9c72fbc0!2sHospital%20Centenario!5e0!3m2!1ses!2sar!4v1664562756422!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="card-body">
+                          <h5 class="card-title">Hospital Centenario </h5>
+                          <p class="card-text">Ante cualquier inquietud o problema recurra a este centro de salud.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <!-- Footer -->
+
+                  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                    <div class="row">
+                      <div class="col-12 col-md">
+                        <!--<a class="back-to-top" href="#"><span class="material-symbols-outlined">move_up</span></a>-->
+                        <button class="noselect"><a href="#"><i class="fa-solid fa-angle-up"></i></a></button>
+                      </div>
+                      <div class="col-6 col-md">
+                        <h5>Fuentes de Info</h5>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text-muted" href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet" target="_blank">OMS</a></li>
+                          <li><a class="text-muted" href="https://www.universitatcarlemany.com/actualidad/la-importancia-de-la-nutricion-en-la-salud#:~:text=Fortalece%20el%20sistema%20inmunol%C3%B3gico,de%20enfermedades%20y%20patolog%C3%ADas%20diversas." target="_blank">Universitat Carlemany</a></li>
+                          <li><a class="text-muted" href="https://www.eufic.org/" target="_blank">Eufic</a></li>
+                          <li><a class="text-muted" href="https://www.paho.org/es/temas/actividad-fisica" target="_blank">OPS</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-6 col-md">
+                        <h5>Recursos</h5>
+                        <ul class="list-unstyled text-small">
+                          <li><a class="text-muted" href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                          <li><a class="text-muted" href="https://fontawesome.com/" target="_blank">Fontawesome</a></li>
+                          <li><a class="text-muted" href="https://unsplash.com/es" target="_blank">Unsplash</a></li>
+                          <li><a class="text-muted" href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-6 col-md">
+                        <h5>Contacto</h5><br>
+                        <ul class="wrapper">
+                          <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" class="at-icon at-icon-facebook" style="fill: rgb(51, 51, 51); width: 32px; height: 32px;"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg>
+                            <a href="https://www.facebook.com/marcelo.lizzi.965/" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
+                          </li>
+                          <li class="icon github">
+                            <span class="tooltip">Github</span>
+                            <a href="https://github.com/MarceloLizzi/Desarrollo-Web-03" target="_blank"><span><i class="fab fa-github"></i></span></a>
+                          </li>
+                          <li class="icon instagram">
+                          <span class="tooltip">Instagram</span>
+                          <a href="https://www.instagram.com/lizzimarcelo_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                          </li>
+                          <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" class="at-icon at-icon-twitter" style="fill: rgb(51, 51, 51); width: 32px; height: 32px;"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg>
+                            <a href="https://twitter.com/MarceloLizzi" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </footer>
+            
+            <!-- javaScript-->
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+            
+</body>
+</html>
